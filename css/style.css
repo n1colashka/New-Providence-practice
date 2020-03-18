@@ -14,6 +14,7 @@ body {
     font-family: 'Lato', sans-serif;
     font-weight: 500;
     font-size: 20px;
+    line-height: 28px;
     color: #8c8f94;
 }
 
@@ -27,10 +28,14 @@ a {
 }
 
 .header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100px;
+    position: fixed;
+    padding: 44px 0;
+    width: 100%;
+    background-color: #f4f5f6;
+}
+
+.header-inner {
+   
 }
 
 .container {
@@ -47,23 +52,53 @@ a {
 }
 
 .menu-btn {
-    margin-top: 7px;
+    position: absolute;
+    margin-top: 9px;
+}
+
+.menu-btn:hover {
+    cursor: pointer;
+}
+
+.menu-btn:hover .menu-btn__line {
+    background-color: #337ab7;
+}
+
+.help-btn {
+    color:rgba(38, 39, 45, 0.4);
 }
 
 .logo {
-    padding: 0 150px;
+    padding: 0 120px;
 }
 
-.navigation__list li + li {
-    margin-left: 30px;
+.left-menu {
+    position: absolute;
+    display: none;
+    background-color: #000000;
+    top: 0;
+    left: 0;
 }
 
-.navigation__list li + li + li{
+.left-menu__list {
+    color: #ffffff;
+}
+
+.close-btn {
+    color: #ffffff;
+    padding: 10px;
+}
+
+.navigation__list li {
+    margin-left: 50px;
+}
+
+.navigation__list li + li{
     margin-left: 40px;
 }
 
 .navigation__list a:hover {
-    color: #8c8f94;
+    color: #337ab7;
 }
 
 .menu-btn__line {
@@ -76,17 +111,19 @@ a {
 .get-app__btn {
     position: relative;
     color: #ffffff;
-    min-height: 42px;
-    max-width: 150px;
-    padding: 13px 25px 13px 50px;
-    background-color: #267df4;
+    padding: 14px 25px 13px 50px;
     border-radius: 50px;
+    background-color: #267df4;
+}
+
+.navigation__list .get-app__btn:hover {
+    color: #ffffff;
 }
 
 .get-app__btn::before {
     font-family: 'icomoon';
     position: absolute;
     content: "\eabe";
-    left: 0;
+    left: 20px;
     color: #ffffff;
 }
