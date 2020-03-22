@@ -1,4 +1,3 @@
-/* font-family: 'Varela Round', sans-serif; */
 
 html {
     box-sizing: border-box;
@@ -126,4 +125,65 @@ a {
     content: "\eabe";
     left: 20px;
     color: #ffffff;
+}
+
+.first-screen {
+    background-image: url(../img/header-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    width: 100%;
+    min-height: 1000px;
+}
+
+.first-screen__info-box {
+    text-align: center;
+    max-width: 800px;
+    width: 100%;
+    min-height: 320px;
+    padding-top: 200px;
+    margin: 0 auto;
+}
+
+.first-screen__box-title {
+    font-family: 'Varela Round', sans-serif;
+    font-size: 62px;
+    line-height: 72px;
+    color: #26272d;
+    margin-bottom: 40px;
+}
+.first-screen__box-text {
+    margin-bottom: 60px;
+}
+
+.first-screen__videoplayer {
+    
+}
+
+.videoplayer-btn {
+    display: inline-block;
+    position: relative;
+    margin: 0 auto;
+}
+
+.videoplayer-btn__link {
+    max-width: 210px;
+    min-height: 50px;
+    width: 100%;
+    border: 1px solid #dadcdf;
+    border-radius: 50px;
+    display: inline-block;
+    font-size: 16px;
+    line-height: normal;
+    color: #26272d;
+    padding: 17px 50px 17px 65px;
+}
+
+.videoplayer-btn__link::before {
+    font-family: 'icomoon';
+    position: absolute;
+    content: "\ea1c";
+    left: 35px;
+    top: 20px; 
+    color: #26272d;
 }
