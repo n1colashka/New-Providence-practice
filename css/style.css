@@ -1,43 +1,9 @@
-html {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-*,
-*::after,
-*::before {
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
-}
-
-body {
-  font-family: 'Lato', sans-serif;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 28px;
-  color: #8c8f94;
-}
-
-ul {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
 .header {
   position: fixed;
   z-index: 10;
   padding: 44px 0;
   width: 100%;
   background-color: #f4f5f6;
-}
-
-.container {
-  max-width: 1170px;
-  margin: 0 auto;
 }
 
 .navigation__list {
@@ -129,12 +95,48 @@ a {
   color: #ffffff;
 }
 
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  color: #8c8f94;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
 .first-screen {
+  position: relative;
   background-image: url(../img/header-bg.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
   width: 100%;
+  min-height: 1000px;
   overflow: hidden;
 }
 
@@ -143,7 +145,7 @@ a {
   max-width: 800px;
   width: 100%;
   min-height: 320px;
-  padding-top: 200px;
+  padding-top: 120px;
   margin: 0 auto;
 }
 
@@ -160,18 +162,14 @@ a {
 }
 
 .videoplayer-btn {
-  display: inline-block;
-  position: relative;
   margin: 0 auto;
 }
 
 .videoplayer-btn__link {
-  max-width: 210px;
-  min-height: 50px;
-  width: 100%;
+  display: inline-block;
+  position: relative;
   border: 1px solid #dadcdf;
   border-radius: 50px;
-  display: inline-block;
   font-size: 16px;
   line-height: normal;
   color: #26272d;
@@ -182,15 +180,16 @@ a {
   font-family: 'icomoon';
   position: absolute;
   content: "\ea1c";
-  left: 35px;
+  left: 43px;
   top: 20px;
   color: #26272d;
 }
 
 .first-screen-phone {
   position: absolute;
-  z-index: 10;
-  background-image: url(../img/header-phone.png);
-  background-repeat: no-repeat;
-  background-position: bottom center;
+  left: 50%;
+  right: 50%;
+  top: 530px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
