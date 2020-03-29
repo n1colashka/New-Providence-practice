@@ -90,13 +90,6 @@
       margin-bottom: 70px;
    }
 
-   &__item-icon {
-      
-   }
-
-   &__item-info {
-   }
-
    &__info-title {
       margin: 45px 0;
       font-weight: 300;
@@ -188,5 +181,54 @@
             width: 13px;
             background-image: url(../img/arrow-icon.png);
          }
+      }
+}
+
+
+.location {
+      position: relative;
+
+		&__content {
+         max-width: 500px;
+         width: 100%;
+		}
+
+		&__info {
+		}
+
+		&__title {
+         font-family: 'Varela Round', sans-serif;
+         font-size: 42px;
+         line-height: 52px;
+         color: #26272d;
+         margin-bottom: 70px;
+		}
+
+		&__text {
+         margin-bottom: 65px;
+		}
+
+		&__map {
+         position: absolute;
+         right: 0;
+         top: 0;
+      }
+
+      &__partners {
+         padding-bottom: 220px;
+      }
+      
+      &__partners-title {
+         font-size: 12px;
+         font-weight: 700;
+         line-height: 22px;
+         letter-spacing: 1px;
+         margin-bottom: 30px;
+         color: #26272d;
+         text-transform: uppercase;
+      }
+
+      &__partners-logos .location__partners-img:not(:first-child) {
+         margin-left: 30px;
       }
 }
