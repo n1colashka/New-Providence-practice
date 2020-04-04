@@ -30,6 +30,49 @@ a {
    margin: 0 auto;
 }
 
-.line {
+.title {
+      font-family: 'Varela Round', sans-serif;
+      font-size: 42px;
+      line-height: 52px;
+      color: #26272d;
+}
+
+.horizontal-line {
    background-color: #f4f4f4;
+   height: 1px;
+   width: 100%;
+   margin-top: 0;
+   margin-bottom: 125px;
+}
+
+.btn {
+
+}
+
+.btn-link {
+   position: relative;
+   color: #ffffff;
+   font-size: 23px;
+   line-height: 22px;
+   padding: 27px 40px 20px 67px;
+   background-color: #131315;
+   
+   &::before {
+      content: "Download on the";
+      position: absolute;
+      font-size: 12px;
+      line-height: 24px;
+      left: 68px;
+      top: 10px;
+   }
+
+   &::after {
+      content: "";
+      position: absolute;
+      left: 27px;
+      top: 20px;
+      background: url(../img/apple-logo.png) no-repeat center center;
+      width: 24px;
+      height: 28px;
+   }
 }
