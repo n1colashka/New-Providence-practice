@@ -17,39 +17,45 @@
 
 <body>
     <header class="header">
-        <div class="container">
-            <div class="header-inner">
+        <div class="header__inner">
+            <div class="container">
                 <nav class="main-navigation">
                     <div class="menu-btn">
                         <div class="menu-btn__line"></div>
                         <div class="menu-btn__line"></div>
                         <div class="menu-btn__line"></div>
                     </div>
-                    <div class="left-menu">
-                        <ul class="left-menu__list">
-                            <li><a href="#">Tour</a></li>
-                            <li><a href="#">Features</a></li>
-                            <li><a href="#">Pricing</a></li>
-                        </ul>
-                        <a href="#" class="close-btn">X</a>
-                    </div>
                     <ul class="navigation__list">
                         <li><a href="#">Tour</a></li>
                         <li><a href="#">Features</a></li>
                         <li><a href="#">Pricing</a></li>
-                        <li>
+                        <li class="logo-wrapper">
                             <div class="logo">
                                 <a href="#"><img src="img/logo.png" alt=""></a>
                             </div>
                         </li>
                         <li><a class="help-btn" href="#">Help</a></li>
                         <li><a href="#">Contacts</a></li>
-                        <li><a class="get-app__btn" href="#">Get App</a></li>
+                        <li class="get-app__btn-wrapper"><a class="get-app__btn" href="#">Get App</a></li>
                     </ul>
                 </nav>
+
+            </div>
+            <div class="left-menu">
+                <ul class="left-menu__list">
+                    <li><a href="#">Tour</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a class="help-btn" href="#">Help</a></li>
+                    <li><a href="#">Contacts</a></li>
+                    <li class="left-menu__btn"><a class="get-app__btn" href="#">Get App</a></li>
+                </ul>
+                <a href="#" class="close-btn">X</a>
             </div>
         </div>
     </header>
+
+
 
     <div class="first-screen">
         <div class="container">
@@ -286,11 +292,11 @@
         <div class="container">
             <div class="footer__email">
                 <div class="footer__title title">Subscribe our newsletters</div>
-                    <form class="footer__form" action="post">
-                        <input class="email-form" type="email" placeholder="Your e-mail">
-                        <button class="email-btn" type="submit">Subscribe</button>
-                    </form>
-                    <p class="footer__form-label">We promise to never spam you</p>
+                <form class="footer__form" action="post">
+                    <input class="email-form" type="email" placeholder="Your e-mail">
+                    <button class="email-btn" type="submit">Subscribe</button>
+                </form>
+                <p class="footer__form-label">We promise to never spam you</p>
             </div>
             <div class="horizontal-line"></div>
             <div class="footer__main-content">
@@ -346,7 +352,8 @@
             </div>
             <div class="horizontal-line"></div>
             <div class="footer__author">
-                <div class="footer__author-info">For more freebies visit: <a class="footer__author-link" href="#">http://getcraftwork.com</a></div>
+                <div class="footer__author-info">For more freebies visit: <a class="footer__author-link"
+                        href="#">http://getcraftwork.com</a></div>
                 <img class="footer__author-logo" src="img/author-logo.png" alt="">
             </div>
         </div>

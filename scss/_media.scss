@@ -1,0 +1,56 @@
+@media (max-width: 1450px) {
+   .security {
+      background-size: 50%;
+   }
+}
+
+@media (max-width: 1130px) {
+   .logo {
+      padding: 0 50px;
+   }
+}
+
+@media (max-width: 1050px) {
+   .logo {
+      padding: 0;
+   }
+
+   .navigation__list li {
+      margin-left: 20px;
+   }
+}
+
+@media (max-width: 850px) {
+   .navigation__list li {
+      display: none;
+   }
+
+   .menu-btn {
+      display: block;
+   }
+
+   .navigation__list .logo-wrapper,
+   .navigation__list .get-app__btn-wrapper {
+      display: block;
+   }
+
+   .navigation__list {
+      justify-content: space-around;
+   }
+}
+
+@media (max-width: 765px) {
+   .first-screen .first-screen__box-text {
+      margin-bottom: 20px;
+   }
+}
+
+@media (max-width: 500px) {
+   .first-screen .first-screen__box-title {
+      font-size: 52px;
+      line-height: 56px;
+      margin-bottom: 30px;
+   }
+
+   .first-screen 
+}
