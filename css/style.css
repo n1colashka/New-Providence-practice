@@ -419,7 +419,7 @@ a {
 }
 
 @media (max-width: 500px) {
-  .first-screen__box-title {
+  .first-screen .first-screen__box-title {
     font-size: 52px;
     line-height: 56px;
     margin-bottom: 30px;
@@ -737,6 +737,7 @@ a {
 
 .email-btn {
   position: absolute;
+  cursor: pointer;
   right: 318px;
   top: 50%;
   -webkit-transform: translateY(-50%);
