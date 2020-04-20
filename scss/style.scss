@@ -24,6 +24,7 @@
    margin: 0 auto;
 }
 
+
 .first-screen__box-title {
    font-family: 'Varela Round', sans-serif;
    font-size: 62px;
@@ -425,13 +426,65 @@
    }
 
    &__selector-items {
+      position: relative;
       display: flex;
       justify-content: space-between;
-      width: 260px;
+      align-items: center;
+      color: #8c8f94;
+      max-width: 265px;
+      width: 100%;
+      height: 50px;
       border: 1px solid rgba(#02030c, .15);
       border-radius: 50px;
-      padding: 3px;
+      padding: 3px 20px;
+      font-size: 16px;
+      line-height: normal;
+
+      &::after {
+         content: "";
+         position: absolute;
+         left: 3px;
+         top: 3px;
+         width: 122px;
+         height: 42px;
+         border-radius: 50px;
+         background-color: #fff;
+         padding: 15px 25px;
+         cursor: pointer;
+         box-shadow: 0px 5px 20px 0px rgba(61, 61, 62, 0.15), 0px 30px 50px 0px rgba(92, 95, 101, 0.28);
+         transition: all .4s ease;
+      }
+
+      .plans__selector-individual {
+         color: #26272d;
+      }
+
+      .plans__selector-individual,
+      .plans__selector-company {
+         text-align: center;
+         padding: 13px 10px;
+         z-index: 2;
+         cursor: pointer;
+         transition: all .4s ease;
+      }
+
+
    }
+
+
+   .selector--active.plans__selector-items::after {
+      left: 52.5%;
+      
+   }
+
+   .plans__selector-items.selector--active .plans__selector-company {
+      color: #26272d;
+   }
+
+   .plans__selector-items.selector--active .plans__selector-individual {
+      color: #8c8f94;
+   }
+
 
    &__selector-label {
       display: inline-block;
@@ -443,20 +496,7 @@
       margin-bottom: 18px;
    }
 
-   &__selector-item {
-      font-size: 16px;
-      line-height: normal;
-      width: 125px;
-      border-radius: 50px;
-      background-color: transparent;
-      padding: 15px 25px;
-   }
 
-   &__selector-item--active {
-      box-shadow: 0px 5px 20px 0px rgba(61, 61, 62, 0.15), 0px 30px 50px 0px rgba(92, 95, 101, 0.28);
-      background-color: #ffffff;
-      color: #26272d;
-   }
 
    &__text {
       margin-top: 75px;
@@ -475,10 +515,17 @@
    }
 
    &__items {
-      display: flex;
-      justify-content: center;
+      display: none;
       max-width: 670px;
       padding-bottom: 185px;
+      transition: all 1s;
+      
+   }
+
+   .items--active {
+      display: flex;
+      justify-content: center;
+      
    }
 
    &__item {
@@ -492,9 +539,10 @@
       text-align: center;
       background-color: #ededee;
       border-radius: 10px;
+
    }
 
-   &__item--active {
+   .item--active {
       margin-top: 0;
       max-width: 340px;
       max-height: 550px;
@@ -518,7 +566,6 @@
       border-radius: 25px;
       color: #26272d;
       margin-bottom: 55px;
-      max-width: 80px;
    }
 
    &__item-description {
@@ -526,8 +573,6 @@
       margin-bottom: 45px;
       max-width: 200px;
    }
-
-   &__item-features {}
 
    &__features-list {
       font-size: 16px;
@@ -577,4 +622,3 @@
       color: #267df4;
    }
 }
-

@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700|Varela+Round&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/style.css">
@@ -72,7 +73,7 @@
                     <div class="videoplayer-btn"> <a class="videoplayer-btn__link" href="#">Watch video</a></div>
                 </div>
             </div>
-            <div><img class="first-screen-phone" src="img/header-phone.png" alt=""></div>
+            <div class="first-screen-phone__wrapper"><img class="first-screen-phone wow fadeIn" data-wow-offset="200" src="img/header-phone.png" alt=""></div>
         </div>
     </div>
 
@@ -166,13 +167,13 @@
                     </div>
                 </div>
                 <div class="location__map">
-                    <img class="location__map-img" src="img/world-map.png" alt="">
+                    <img class="location__map-img wow fadeInRight" data-wow-offset="200" src="img/world-map.png" alt="">
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="interface">
+    <section class="interface wow fadeIn" data-wow-offset="300">
         <div class="interface__header">
             <div class="interface__header-title">Beautiful Interface</div>
             <div class="interface__header-subtitle">Landing Screen</div>
@@ -240,20 +241,21 @@
                     <div class="plans__selector">
                         <span class="plans__selector-label">You are</span>
                         <div class="plans__selector-items">
-                            <div class="plans__selector-item plans__selector-item--active">Individual</div>
-                            <div class="plans__selector-item">Company</div>
+                            <div class="plans__selector-individual">Individual</div>
+                            <div class="plans__selector-company">Company</div>
+                        </div>
+                        <div class="plans__text">
+                            Thus much I thought proper to tell you in relation to yourself, and to the trust I reposed
+                            in
+                            you.
+                        </div>
+                        <div class="plans__subtext">
+                            Have a bigger team? <a class="plans__subtext-link" href="#">Let`s talk</a>
                         </div>
                     </div>
-                    <div class="plans__text">
-                        Thus much I thought proper to tell you in relation to yourself, and to the trust I reposed in
-                        you.
-                    </div>
-                    <div class="plans__subtext">
-                        Have a bigger team? <a class="plans__subtext-link" href="#">Let`s talk</a>
-                    </div>
                 </div>
-                <div class="plans__items">
-                    <div class="plans__item plans__item--active">
+                <div class="plans__items items--active animated fadeIn slow">
+                    <div class="plans__item item--active">
                         <div class="plans__item-title">Starter</div>
                         <div class="plans__item-price">Free</div>
                         <div class="plans__item-description">Build your schedule every day</div>
@@ -270,6 +272,37 @@
                     <div class="plans__item">
                         <div class="plans__item-title">Pro</div>
                         <div class="plans__item-price">$4.99</div>
+                        <div class="plans__item-description">Make your life better</div>
+                        <div class="plans__item-features">
+                            <ul class="plans__features-list">
+                                <li class="plans__features-item">Unlimited events</li>
+                                <li class="plans__features-item">Connect Dropbox & Evernote</li>
+                                <li class="plans__features-item">Personal Assistant</li>
+                            </ul>
+                        </div>
+                        <div class="plans__item-btn">
+                            <a class="plans__item-link plans__item-link--active" href="#">Make me a Pro</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="plans__items">
+                    <div class="plans__item item--active">
+                        <div class="plans__item-title">Starter</div>
+                        <div class="plans__item-price">Free</div>
+                        <div class="plans__item-description">Build your schedule every day</div>
+                        <div class="plans__item-features">
+                            <ul class="plans__features-list">
+                                <li class="plans__features-item">Unlimited events</li>
+                                <li class="plans__features-item">Connect Dropbox & Evernote</li>
+                            </ul>
+                        </div>
+                        <div class="plans__item-btn">
+                            <a href="" class="plans__item-link">Get started</a>
+                        </div>
+                    </div>
+                    <div class="plans__item">
+                        <div class="plans__item-title">Pro team</div>
+                        <div class="plans__item-price">$14.99</div>
                         <div class="plans__item-description">Make your life better</div>
                         <div class="plans__item-features">
                             <ul class="plans__features-list">
@@ -361,6 +394,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/slick.min.js"></script>
+    <script src="js/wow.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 

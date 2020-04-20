@@ -71,12 +71,16 @@
 
 
    &__socials {
+      display: flex;
       padding-top: 40px;
 
       a {
          font-size: 18px;
          margin-left: 25px;
          display: inline-block;
+         &:hover {
+            color: #26272d;
+         }
       }
 
       a:first-child {
@@ -93,6 +97,10 @@
    .fb-logo::before {
       font-family: 'icomoon';
       content: "\ea90";
+   }
+
+   .google-logo {
+      font-size: 28px;
    }
 
    .google-logo::before {

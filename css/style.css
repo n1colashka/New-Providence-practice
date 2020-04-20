@@ -28,8 +28,9 @@ a {
 }
 
 .container {
-  max-width: 1170px;
+  max-width: 1190px;
   margin: 0 auto;
+  padding: 10px;
 }
 
 .title {
@@ -285,6 +286,9 @@ a {
 }
 
 .footer__socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   padding-top: 40px;
 }
 
@@ -292,6 +296,10 @@ a {
   font-size: 18px;
   margin-left: 25px;
   display: inline-block;
+}
+
+.footer__socials a:hover {
+  color: #26272d;
 }
 
 .footer__socials a:first-child {
@@ -306,6 +314,10 @@ a {
 .footer .fb-logo::before {
   font-family: 'icomoon';
   content: "\ea90";
+}
+
+.footer .google-logo {
+  font-size: 28px;
 }
 
 .footer .google-logo::before {
@@ -844,16 +856,68 @@ a {
 }
 
 .plans__selector-items {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 260px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #8c8f94;
+  max-width: 265px;
+  width: 100%;
+  height: 50px;
   border: 1px solid rgba(2, 3, 12, 0.15);
   border-radius: 50px;
-  padding: 3px;
+  padding: 3px 20px;
+  font-size: 16px;
+  line-height: normal;
+}
+
+.plans__selector-items::after {
+  content: "";
+  position: absolute;
+  left: 3px;
+  top: 3px;
+  width: 122px;
+  height: 42px;
+  border-radius: 50px;
+  background-color: #fff;
+  padding: 15px 25px;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 5px 20px 0px rgba(61, 61, 62, 0.15), 0px 30px 50px 0px rgba(92, 95, 101, 0.28);
+          box-shadow: 0px 5px 20px 0px rgba(61, 61, 62, 0.15), 0px 30px 50px 0px rgba(92, 95, 101, 0.28);
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
+}
+
+.plans__selector-items .plans__selector-individual {
+  color: #26272d;
+}
+
+.plans__selector-items .plans__selector-individual,
+.plans__selector-items .plans__selector-company {
+  text-align: center;
+  padding: 13px 10px;
+  z-index: 2;
+  cursor: pointer;
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
+}
+
+.plans .selector--active.plans__selector-items::after {
+  left: 52.5%;
+}
+
+.plans .plans__selector-items.selector--active .plans__selector-company {
+  color: #26272d;
+}
+
+.plans .plans__selector-items.selector--active .plans__selector-individual {
+  color: #8c8f94;
 }
 
 .plans__selector-label {
@@ -864,22 +928,6 @@ a {
   color: #26272d;
   text-transform: uppercase;
   margin-bottom: 18px;
-}
-
-.plans__selector-item {
-  font-size: 16px;
-  line-height: normal;
-  width: 125px;
-  border-radius: 50px;
-  background-color: transparent;
-  padding: 15px 25px;
-}
-
-.plans__selector-item--active {
-  -webkit-box-shadow: 0px 5px 20px 0px rgba(61, 61, 62, 0.15), 0px 30px 50px 0px rgba(92, 95, 101, 0.28);
-          box-shadow: 0px 5px 20px 0px rgba(61, 61, 62, 0.15), 0px 30px 50px 0px rgba(92, 95, 101, 0.28);
-  background-color: #ffffff;
-  color: #26272d;
 }
 
 .plans__text {
@@ -898,14 +946,20 @@ a {
 }
 
 .plans__items {
+  display: none;
+  max-width: 670px;
+  padding-bottom: 185px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.plans .items--active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  max-width: 670px;
-  padding-bottom: 185px;
 }
 
 .plans__item {
@@ -921,7 +975,7 @@ a {
   border-radius: 10px;
 }
 
-.plans__item--active {
+.plans .item--active {
   margin-top: 0;
   max-width: 340px;
   max-height: 550px;
@@ -946,7 +1000,6 @@ a {
   border-radius: 25px;
   color: #26272d;
   margin-bottom: 55px;
-  max-width: 80px;
 }
 
 .plans__item-description {
