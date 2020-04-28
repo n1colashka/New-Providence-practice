@@ -27,22 +27,23 @@
                         <div class="menu-btn__line"></div>
                     </div>
                     <ul class="navigation__list">
-                        <li><a href="#">Tour</a></li>
+                        <li><a href="#location">Tour</a></li>
                         <li><a href="#">Features</a></li>
-                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#plans">Pricing</a></li>
                         <li class="logo-wrapper">
                             <div class="logo">
                                 <a href="#"><img src="img/logo.png" alt=""></a>
                             </div>
                         </li>
                         <li><a class="help-btn" href="#">Help</a></li>
-                        <li><a href="#">Contacts</a></li>
+                        <li><a href="#footer">Contacts</a></li>
                         <li class="get-app__btn-wrapper"><a class="get-app__btn" href="#">Get App</a></li>
                     </ul>
                 </nav>
 
             </div>
             <div class="left-menu">
+                <img class="left-menu__logo" src="img/logo-white.png" alt="">
                 <ul class="left-menu__list">
                     <li><a href="#">Tour</a></li>
                     <li><a href="#">Features</a></li>
@@ -51,7 +52,16 @@
                     <li><a href="#">Contacts</a></li>
                     <li class="left-menu__btn"><a class="get-app__btn" href="#">Get App</a></li>
                 </ul>
-                <a href="#" class="close-btn">X</a>
+                <a href="#" class="close-btn"></a>
+
+                <div class="left-menu__socials">
+                    <a class="twitter-logo" href="#"></a>
+                    <a class="fb-logo" href="#"></a>
+                    <a class="google-logo" href="#"></a>
+                    <a class="tumbler-logo" href="#"></a>
+                    <a class="pinterest-logo" href="#"></a>
+                    <a class="linkedin-logo" href="#"></a>
+                </div>
             </div>
         </div>
     </header>
@@ -61,19 +71,21 @@
     <div class="first-screen">
         <div class="container">
             <div class="first-screen__info-box">
-                <h2 class="first-screen__box-title">
+                <h2 class="first-screen__box-title wow fadeInUp">
                     What happens tomorrow?
                 </h2>
-                <div class="first-screen__box-text">
+                <div class="first-screen__box-text wow fadeInUp" data-wow-delay=".2s">
                     The sight of the tumblers restored Bob Sawyer to a degree of equanimity which he had not possessed
                     since
                     his interview with his landlady. His face brightened up, and he began to feel quite convivial.
                 </div>
                 <div class="first-screen__videoplayer">
-                    <div class="videoplayer-btn"> <a class="videoplayer-btn__link" href="#">Watch video</a></div>
+                    <div class="videoplayer-btn"> <a class="videoplayer-btn__link"
+                            href="https://vimeo.com/74220509">Watch video</a></div>
                 </div>
             </div>
-            <div class="first-screen-phone__wrapper"><img class="first-screen-phone wow fadeIn" data-wow-offset="200" src="img/header-phone.png" alt=""></div>
+            <div class="first-screen-phone__wrapper"><img class="first-screen-phone wow fadeIn" data-wow-delay=".4s"
+                    src="img/header-phone.png" alt=""></div>
         </div>
     </div>
 
@@ -123,7 +135,7 @@
     <div class="container">
         <div class="horizontal-line"></div>
     </div>
-    <section class="security">
+    <section class="security wow fadeInDown" data-wow-offset="200">
         <div class="container">
             <div class="security__content">
                 <div class="security__title">Your day is protected</div>
@@ -136,12 +148,14 @@
                         ones, and the birds have deserted them a long while.
                     </p>
                 </div>
-                <div class="security__hack-btn btn"><a class="security__hack-link" href="#">Try to hack us</a></div>
-                <div class="security__more-btn btn"><a class="security__more-link" href="#">Learn more</a></div>
+                <div class="security__btns">
+                    <div class="security__hack-btn btn"><a class="security__hack-link" href="#">Try to hack us</a></div>
+                    <div class="security__more-btn btn"><a class="security__more-link" href="#">Learn more</a></div>
+                </div>
             </div>
         </div>
     </section>
-    <section class="location">
+    <section class="location" id="location">
         <div class="container">
             <div class="location__content">
                 <div class="location__info">
@@ -200,32 +214,77 @@
         <div class="container">
             <div class="team-img-slider">
                 <div class="team-img-slider__inner">
-                    <div class="team-img-slider__item"> <img class="team-img-slider__img"
+                    <div class="team-img-slider__item"> <img class="team-img-slider__img active"
                             src="img/team-slider-img-1.jpg" alt=""></div>
-                    <div class="team-img-slider__item"> <img class="team-img-slider__img"
+                    <div class="team-img-slider__item"> <img class="team-img-slider__img next"
                             src="img/team-slider-img-2.jpg" alt=""></div>
-                    <div class="team-img-slider__item"> <img class="team-img-slider__img"
+                    <div class="team-img-slider__item"> <img class="team-img-slider__img prev"
                             src="img/team-slider-img-3.jpg" alt=""></div>
                 </div>
             </div>
             <div class="team-slider">
-                <div class="team-slider__item">
-                    <div class="team-slider__content">
-                        <div class="team-slider__title">New Providence is the great UI Kit</div>
-                        <div class="team-slider__text">
-                            “Just then her head struck against the roof of the hall: in fact she was now more than nine
-                            feet high, and she at once took up the little golden key and hurried off to the garden
-                            door.”
+                <div class="team-slider__inner">
+                    <div class="team-slider__item active">
+                        <div class="team-slider__content">
+                            <div class="team-slider__title">New Providence is the great UI Kit</div>
+                            <div class="team-slider__text">
+                                “Just then her head struck against the roof of the hall: in fact she was now more than
+                                nine
+                                feet high, and she at once took up the little golden key and hurried off to the garden
+                                door.”
+                            </div>
+                            <div class="team-slider__stars">
+                                <div class="star active"> </div>
+                                <div class="star active"> </div>
+                                <div class="star active"> </div>
+                                <div class="star active"> </div>
+                                <div class="star"> </div>
+                            </div>
+                            <div class="team-slider__author">
+                                Cameron Dowman
+                            </div>
                         </div>
-                        <div class="team-slider__stars">
-                            <img src="img/star.png" alt="" class="star">
-                            <img src="img/star.png" alt="" class="star">
-                            <img src="img/star.png" alt="" class="star">
-                            <img src="img/star.png" alt="" class="star">
-                            <img src="img/star.png" alt="" class="star">
+                    </div>
+                    <div class="team-slider__item next">
+                        <div class="team-slider__content">
+                            <div class="team-slider__title">New Providence is the great UI Kit</div>
+                            <div class="team-slider__text">
+                                “Just then her head struck against the roof of the hall: in fact she was now more than
+                                nine
+                                feet high, and she at once took up the little golden key and hurried off to the garden
+                                door.”
+                            </div>
+                            <div class="team-slider__stars">
+                                <div class="star active"> </div>
+                                <div class="star active"> </div>
+                                <div class="star active"> </div>
+                                <div class="star active"> </div>
+                                <div class="star"> </div>
+                            </div>
+                            <div class="team-slider__author">
+                                Cameron Dowman
+                            </div>
                         </div>
-                        <div class="team-slider__author">
-                            Cameron Dowman
+                    </div>
+                    <div class="team-slider__item prev">
+                        <div class="team-slider__content">
+                            <div class="team-slider__title">New Providence is the great UI Kit</div>
+                            <div class="team-slider__text">
+                                “Just then her head struck against the roof of the hall: in fact she was now more than
+                                nine
+                                feet high, and she at once took up the little golden key and hurried off to the garden
+                                door.”
+                            </div>
+                            <div class="team-slider__stars">
+                                <div class="star active"> </div>
+                                <div class="star active"> </div>
+                                <div class="star active"> </div>
+                                <div class="star active"> </div>
+                                <div class="star"> </div>
+                            </div>
+                            <div class="team-slider__author">
+                                Cameron Dowman
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -233,7 +292,7 @@
         </div>
     </section>
 
-    <section class="plans">
+    <section class="plans" id="plans">
         <div class="container">
             <div class="plans__content">
                 <div class="plans__info">
@@ -321,7 +380,7 @@
         </div>
     </section>
 
-    <footer class="footer">
+    <footer class="footer" id="footer">
         <div class="container">
             <div class="footer__email">
                 <div class="footer__title title">Subscribe our newsletters</div>
@@ -390,7 +449,7 @@
                 <img class="footer__author-logo" src="img/author-logo.png" alt="">
             </div>
         </div>
-    </footer>
+    </footer> 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/slick.min.js"></script>

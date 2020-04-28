@@ -1,5 +1,6 @@
 html {
    box-sizing: border-box;
+   scroll-behavior: smooth;
 }
 
 *,
@@ -32,10 +33,10 @@ a {
 }
 
 .title {
-      font-family: 'Varela Round', sans-serif;
-      font-size: 42px;
-      line-height: 52px;
-      color: #26272d;
+   font-family: 'Varela Round', sans-serif;
+   font-size: 42px;
+   line-height: 52px;
+   color: #26272d;
 }
 
 .horizontal-line {
@@ -46,9 +47,7 @@ a {
    margin-bottom: 125px;
 }
 
-.btn {
-
-}
+.btn {}
 
 .btn-link {
    position: relative;
@@ -57,7 +56,7 @@ a {
    line-height: 22px;
    padding: 27px 40px 20px 67px;
    background-color: #131315;
-   
+
    &::before {
       content: "Download on the";
       position: absolute;
@@ -76,4 +75,38 @@ a {
       width: 24px;
       height: 28px;
    }
+}
+
+.twitter-logo::before {
+   font-family: 'icomoon';
+   content: "\ea96";
+}
+
+.fb-logo::before {
+   font-family: 'icomoon';
+   content: "\ea90";
+}
+
+.google-logo::before {
+   font-size: 26px;
+}
+
+.google-logo::before {
+   font-family: 'icomoon';
+   content: "\ea8b";
+}
+
+.tumbler-logo::before {
+   font-family: 'icomoon';
+   content: "\eab9";
+}
+
+.pinterest-logo::before {
+   font-family: 'icomoon';
+   content: "\ead1";
+}
+
+.linkedin-logo::before {
+   font-family: 'icomoon';
+   content: "\eaca";
 }

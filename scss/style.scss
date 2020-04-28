@@ -342,13 +342,29 @@
 
 .team {
    background-color: #ffffff;
+   min-height: 750px;
+   height: 100%;
 
    .team-slider {
       margin: 0 auto;
+      overflow: hidden;
 
       &__item {
-         margin: 0 auto;
+         position: absolute;
+         
          max-width: 570px;
+         transition: all .5s ease;
+
+         &.active {
+            left: 50%;
+            transform: translateX(-50%);
+         }
+         &.prev {
+            left: -200%;
+         }
+         &.next {
+            left: -200%;
+         }
       }
 
       &__content {
@@ -369,8 +385,25 @@
       }
 
       &__stars {
+         display: flex;
+         justify-content: space-between;
+         margin: 0 auto;
+         max-width: 130px;
          margin-bottom: 60px;
       }
+
+      .star::before {
+         font-size: 22px;
+         font-family: 'icomoon';
+         content: "\f005";
+         color: #8c8f94;
+
+      }
+
+      .star.active::before {
+         color: #f2bc3b;
+      }
+
 
       &__author {
          font-size: 12px;
@@ -388,12 +421,26 @@
       margin: 0 auto;
       max-width: 570px;
 
-      &__item {}
-
       &__img {
+         cursor: pointer;
+         opacity: .2;
+         width: 112px;
+         height: 112px;
          border-radius: 50%;
+         transition: all .5s ease;
+
+         &.active {
+            opacity: 1;
+            width: 144px;
+            height: 144px;
+
+         }
       }
+
+      &__item {}
    }
+
+
 
    .team-img-slider__inner {
       display: flex;
@@ -474,7 +521,7 @@
 
    .selector--active.plans__selector-items::after {
       left: 52.5%;
-      
+
    }
 
    .plans__selector-items.selector--active .plans__selector-company {
@@ -519,13 +566,13 @@
       max-width: 670px;
       padding-bottom: 185px;
       transition: all 1s;
-      
+
    }
 
    .items--active {
       display: flex;
       justify-content: center;
-      
+
    }
 
    &__item {

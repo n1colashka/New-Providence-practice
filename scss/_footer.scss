@@ -89,40 +89,6 @@
    }
 
 
-   .twitter-logo::before {
-      font-family: 'icomoon';
-      content: "\ea96";
-   }
-
-   .fb-logo::before {
-      font-family: 'icomoon';
-      content: "\ea90";
-   }
-
-   .google-logo {
-      font-size: 28px;
-   }
-
-   .google-logo::before {
-      font-family: 'icomoon';
-      content: "\ea8b";
-   }
-
-   .tumbler-logo::before {
-      font-family: 'icomoon';
-      content: "\eab9";
-   }
-
-   .pinterest-logo::before {
-      font-family: 'icomoon';
-      content: "\ead1";
-   }
-
-   .linkedin-logo::before {
-      font-family: 'icomoon';
-      content: "\eaca";
-   }
-
    &__links {
       display: flex;
       justify-content: space-between;
@@ -134,7 +100,10 @@
       font-size: 16px;
       line-height: 36px;
       margin-top: 15px;
-
+      &:hover,
+      &:focus {
+         color: #337ab7;
+      }
    }
 
    &__link-title {
