@@ -688,7 +688,7 @@ a {
         flex-wrap: wrap;
   }
   .footer .footer__author-logo {
-    width: 50%;
+    display: none;
   }
 }
 
